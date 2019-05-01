@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 function doSomething(arr) {
   arr.map((elt, i) => {
     console.log(elt);
