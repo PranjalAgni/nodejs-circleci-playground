@@ -36,4 +36,4 @@ jobs:
       - run: yarn start
 
       # run linting!
-      - run: eslint index.js
+      - run: yarn lint
