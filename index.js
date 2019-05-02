@@ -37,6 +37,7 @@ app.get('/', (req, res) => {
   });
 });
 
-app.listen(4000, () => {
+const port = process.env.port || 4000;
+app.listen(port, () => {
   console.log('Server running on 4000');
 });
