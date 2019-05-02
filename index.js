@@ -1,4 +1,7 @@
 /* eslint-disable no-console */
+
+const express = require('express');
+const app = express();
 function doSomething(arr) {
   arr.map((elt, i) => {
     console.log(elt);
@@ -27,3 +30,13 @@ function binarySearch(low, high, arr, key) {
 }
 
 console.log(binarySearch(0, 5, [12, 22, 23, 24, 25, 66], 66));
+
+app.get('/', (req, res) => {
+  res.json({
+    data: 'yummy'
+  });
+});
+
+app.listen(4000, () => {
+  console.log('Server running on 4000');
+});
