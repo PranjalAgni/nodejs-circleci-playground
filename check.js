@@ -2,7 +2,7 @@
 const fetch = require('node-fetch');
 
 const body = {
-  data: [12, -144, 56, 78, 0, 1]
+  data: [1111, -144, 56, 78]
 };
 
 fetch('https://sample-node-cicd.herokuapp.com/insertionSort', {
