@@ -33,8 +33,7 @@ app.post('/insertionSort', (req, res) => {
   const { data } = req.body;
   // console.log(typeof data);
   const result = insertionSort(data);
-  console.log(result);
-  res.json(result);
+  res.json({ answer: result });
 });
 
 const port = process.env.PORT || 4400;

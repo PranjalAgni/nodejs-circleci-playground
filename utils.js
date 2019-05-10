@@ -14,9 +14,8 @@ const binarySearch = (low, high, arr, key) => {
   return -1;
 };
 
-const insertionSort = unsorted => {
-  let arr = unsorted;
-  let len = arr.length - 1;
+const insertionSort = arr => {
+  let len = arr.length;
   for (let i = 1; i < len; i++) {
     let key = arr[i];
     let j = i - 1;
