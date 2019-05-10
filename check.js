@@ -5,7 +5,7 @@ const body = {
   data: [12, -144, 56, 78, 0, 1]
 };
 
-fetch('http://localhost:4400/insertionSort', {
+fetch('https://sample-node-cicd.herokuapp.com/insertionSort', {
   method: 'post',
   body: JSON.stringify(body),
   headers: { 'Content-Type': 'application/json' }

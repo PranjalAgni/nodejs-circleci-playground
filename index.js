@@ -12,7 +12,7 @@ app.use(
 );
 
 app.use(bodyParser.json());
-app.get('/', (req, res) => {
+app.get('/play', (req, res) => {
   res.json({
     data: 'yummy'
   });
