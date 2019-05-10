@@ -2,10 +2,21 @@
 const fetch = require('node-fetch');
 
 const body = {
-  data: [1111, -144, 56, 78]
+  data: [1, 2, 4, 5, 6],
+  key: 4
 };
 
-fetch('http://localhost:4400/insertionSort', {
+//https://sample-node-cicd.herokuapp.com
+//http://localhost:4400
+// fetch('https://sample-node-cicd.herokuapp.com/insertionSort', {
+//   method: 'post',
+//   body: JSON.stringify(body),
+//   headers: { 'Content-Type': 'application/json' }
+// })
+//   .then(res => res.json())
+//   .then(ans => console.log(ans));
+
+fetch('https://sample-node-cicd.herokuapp.com/binarySearch', {
   method: 'post',
   body: JSON.stringify(body),
   headers: { 'Content-Type': 'application/json' }
