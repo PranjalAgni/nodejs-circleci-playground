@@ -37,7 +37,7 @@ app.post('/insertionSort', (req, res) => {
   res.json(result);
 });
 
-const port = process.env.port || 4400;
+const port = process.env.PORT || 4400;
 app.listen(port, () => {
   console.log(`Server running on ${port}`);
 });
